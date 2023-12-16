@@ -6,6 +6,7 @@ body {
     margin: 0;
     background-image: url('pixelated-background.jpg');
     background-size: cover;
+    background-color: black;
     color: #fff;
     font-family: 'Arial', sans-serif;
 }
@@ -15,7 +16,6 @@ body {
     color: #c95050;
     padding: 20px;
     border-radius: 15px;
-    background-color: black;
     box-shadow: 0 0 15px rgba(255, 255, 255, 0.2),
                 0 4px 30px rgba(0, 0, 0, 0.4);
     transition: background-color 0.3s ease-in-out;
@@ -32,7 +32,7 @@ body {
 #time{
     margin: auto;
     color: brown;
-    font-size: 10vw;
+    font-size: 13vw; /* Use viewport width (vw) unit to make font size responsive */
     text-align: center;
 }
 
