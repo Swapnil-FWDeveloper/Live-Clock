@@ -1,39 +1,38 @@
 body {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 100vh;
-    margin: 0;
-    background-image: url('pixelated-background.jpg');
-    background-size: cover;
-    background-color: black;
-    color: #fff;
-    font-family: 'Arial', sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  margin: 0;
+  background-image: url("pixelated-background.jpg");
+  background-size: cover;
+  background-color: black;
+  color: #fff;
+  font-family: "Arial", sans-serif;
 }
 
 .clock {
-    font-size: 2.5em;
-    color: #c95050;
-    padding: 20px;
-    border-radius: 15px;
-    box-shadow: 0 0 15px rgba(255, 255, 255, 0.2),
-                0 4px 30px rgba(0, 0, 0, 0.4);
-    transition: background-color 0.3s ease-in-out;
+  font-size: 7.5em;
+  color: #c95050;
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 0 0 15px rgba(255, 255, 255, 0.2), 0 4px 30px rgba(0, 0, 0, 0.4);
+  transition: background-color 0.3s ease-in-out;
 }
 
 #brightnessControl {
-    position: fixed;
-    top: 10px;
-    left: 50%;
-    transform: translateX(-50%);
-    opacity: 0.3;
-    z-index: 1;
+  position: fixed;
+  top: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  opacity: 0.3;
+  z-index: 1;
 }
-#time{
-    margin: auto;
-    color: brown;
-    font-size: 13vw; /* Use viewport width (vw) unit to make font size responsive */
-    text-align: center;
+#time {
+  margin: auto;
+  color: brown;
+  font-size: 20vw; /* Use viewport width (vw) unit to make font size responsive */
+  text-align: center;
 }
 
 /* .clock:hover {
@@ -42,22 +41,22 @@ body {
 
 /* Responsive styles */
 @media (max-width: 800px) {
-    .clock {
-        font-size: 2em;
-        padding: 15px;
-    }
+  .clock {
+    font-size: 2em;
+    padding: 15px;
+  }
 }
 
 @media (max-width: 600px) {
-    .clock {
-        font-size: 1.8em;
-        padding: 10px;
-    }
+  .clock {
+    font-size: 1.8em;
+    padding: 10px;
+  }
 }
 
 @media (max-width: 400px) {
-    .clock {
-        font-size: 1.5em;
-        padding: 8px;
-    }
+  .clock {
+    font-size: 1.5em;
+    padding: 8px;
+  }
 }
