@@ -5,9 +5,9 @@ function updateClock() {
     let seconds = now.getSeconds();
     let ampm = hours >= 12 ? 'PM' : 'AM';
 
-    // Convert to 12-hour format
+
     hours = hours % 12;
-    hours = hours ? hours : 12; // The hour '0' should be '12'
+    hours = hours ? hours : 12; 
 
     // Format the time
     let timeString = formatTime(hours) + ":" + formatTime(minutes) + ":" + formatTime(seconds) + " " + ampm;
@@ -15,14 +15,14 @@ function updateClock() {
     // Display the time in the 'time' element
     document.getElementById('time').innerText = timeString;
 
-    // Get the month and year
+    // month and year
     let month = now.toLocaleString('default', { month: 'long' });
     let year = now.getFullYear();
 
     // Display the date in the 'date' element
     document.getElementById('date').innerText = month + ' ' + now.getDate() + ', ' + year;
 
-    // Update the clock every second
+    // clock every second
     setTimeout(updateClock, 1000);
 }
 
@@ -39,6 +39,5 @@ function toggleTheme() {
     document.body.classList.toggle('day-theme');
 }
 
-// Initial call to start the clock
 updateClock();
 

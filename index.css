@@ -32,7 +32,7 @@ body {
 #time{
     margin: auto;
     color: brown;
-    font-size: 10vw; /* Use viewport width (vw) unit to make font size responsive */
+    font-size: 10vw;
     text-align: center;
 }
 
